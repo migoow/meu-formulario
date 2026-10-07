@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="titulos">
+            <h1>Crie e compartilhe seu evento.</h1>
+            <h3>O primeiro passo, é preencher esse formulário de inscrição.</h3>
+        </div>
+    </header>
+    <form class="formulario">
+        <h2 class="formulario__titulo">Informações do Evento</h2>
+        <hr class="linha">
+        <label>Titulo do evento <span>(mínimo 8 caracteres)</span></label>
+        <input class="input" type="" name="">
+
+        <label>Link do Evento <span>(comece com https://)</span></label>
+        <input class="input" type="" name="">
+
+        <label>Whatsapp para contato <span>(somente com números)</span></label>
+        <input class="input" type="" name="">
+
+        <label>Informações extras</label>
+        <input class="input2" type="" name="">
+
+        <label>Categoria</label>
+            <select class="input select" name="categoria">
+                <option value="" disabled selected hidden>Tipo do evento</option>
+            </select>
+
+        <h3 class = "formulario__titulo">Privacidade</h3>
+        <hr class="linha">
+
+        <label>E-mail do administrador<span>(minímo 8 caracteres)</span></label>
+        <input class="input" type="" name="">
+
+        <label>Senha de acessos para os participantes<span>(minímo 8 caracteres)</span></label>
+        <input class="input3" type="" name="">
+
+          <div class="formulario__campo">
+            <label for="senha">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
+            <input class="input" type="password" id="senha" name="senha">
+          </div>
+
+          <div class="formulario__check">
+            <input type="checkbox" id="privado" name="privado" checked>
+            <label for="privado">Evento privado</label>
+          </div>
+
+            <h2 class="formulario__titulo formulario__titulo--espaco">Dia e hora</h2>
+            <hr class="linha">
+
+          <div class="formulario__linha">
+          <div class="formulario__campo formulario__campo--data">
+          <label for="data">Data</label>
+          <input class="input input--enfeite" type="text" id="data" name="data" readonly tabindex="-1">
+        </div>
+
+        <div class="formulario__campo formulario__campo--hora">
+          <label for="inicio">Das</label>
+          <input class="input input--enfeite" type="text" id="inicio" name="inicio" placeholder="19:00" readonly tabindex="-1">
+        </div>
+
+        <div class="formulario__campo formulario__campo--hora">
+        <label for="fim">Até</label>
+        <input class="input input--enfeite" type="text" id="fim" name="fim" placeholder="20:00" readonly tabindex="-1">
+        </div>
+        </div>
+
+        <div class="formulario__rodape">
+        <button class="botao" type="submit">Salvar evento</button>
+        </div>
+
+    </form>
+</body>
+</html>
